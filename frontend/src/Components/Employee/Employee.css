@@ -1,0 +1,93 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+.emp-body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../../Resources/emp-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.emp {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.heading{
+    flex-basis: content;
+    text-align: left;
+    margin: 0;
+}
+
+
+
+.form {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px 70px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.emp-body .ant-btn[disabled] {
+    background: rgba(255, 255, 255, 0.3) !important; /* Light transparent white */
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: #ccc !important;
+}
+
+.emp-body .ant-form-item {
+    margin-bottom: 20px; 
+}
+
+.emp-body .ant-form-item-label label {
+    font-size: medium;
+    color: white !important;
+}
+
+.emp-body .ant-input {
+    background: rgba(255, 255, 255, 0.1);;
+    color: yellow !important;
+}
+
+.emp-body .ant-input:focus, .ant-input:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important; 
+    border-color: yellow !important; 
+}
+
+.emp-body .ant-input-status-error .ant-input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: yellow !important;
+    border-color: red !important; 
+}
+
+
+
+@media (max-width: 768px) {
+    .emp {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .heading, .form {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        font-size: 3rem; 
+    }
+}

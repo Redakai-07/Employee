@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.showManager-body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), 
+                      url('../../../Resources/table-backgrounds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;  
+}
+
+
+.table {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: rgba(245, 244, 244, 1);
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+}
+
+
+.table .ant-table {
+    background-color: transparent;
+    color: white;
+}
+
+
+.table .ant-table-thead > tr > th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.table .ant-table-tbody > tr > td {
+    text-align: center;
+    color: white;
+}
+
+
+.table .ant-table-tbody > tr:hover > td {
+    background-color: rgba(255, 255, 255, 0.1)!important;
+}
+
+
+@media (max-width: 768px) {
+    .showManager-body {
+        padding: 20px;
+        height: auto;
+    }
+
+    .heading {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .table {
+        width: 100%;
+    }
+}

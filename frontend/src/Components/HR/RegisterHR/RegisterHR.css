@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.registerHr-body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../../../Resources/emp-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+
+.heading{
+    flex-basis: content;
+    text-align: left;
+    margin-right: 15%;
+}
+
+.form {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px 70px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.input .ant-input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: yellow !important;
+    border: 1px solid yellow !important;
+}
+
+
+.registerHr-body .ant-input-status-error .ant-input,
+.registerHr-body .ant-input-password.ant-input-status-error input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: red !important;
+    color: yellow !important;
+}
+
+
+
+.registerHr-body .ant-input-password {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+
+.registerHr-body .ant-input-password.ant-input-status-error {
+    border-color: red !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.registerHr-body .ant-input-password.ant-input-status-error input {
+    color: yellow !important;
+}
+
+
+.registerHr-body .ant-input-password input {
+    background: transparent !important;
+    color: yellow !important;
+}
+
+
+
+.registerHr-body .ant-input-password:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: yellow !important;
+    box-shadow: none !important;
+}
+
+
+.registerHr-body .ant-input-password.ant-input-status-error {
+    border-color: red !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.registerHr-body .ant-input-password.ant-input-status-error input {
+    color: yellow !important;
+}
+
+
+.registerHr-body .ant-form-item-label label {
+    font-size: medium;
+    color: white !important;
+}
+
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+}
