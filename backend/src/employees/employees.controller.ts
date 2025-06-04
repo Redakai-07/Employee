@@ -4,8 +4,6 @@ import { CreateEmployeeDto } from './dto/create-employee.dto';
 // localhost:4000/employees
 @Controller('employees')
 export class EmployeesController {
-
-
   constructor(private readonly employeesService: EmployeesService) {}
 
   // Creates new Employee
