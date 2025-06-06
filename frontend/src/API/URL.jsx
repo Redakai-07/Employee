@@ -1,48 +1,48 @@
 const AsstHR={
-    login:'http://localhost:4000/asst-hr/login',
-    createManager:'http://localhost:4000/asst-hr',
-    getManager:'http://localhost:4000/asst-hr',
-    delManager:'http://localhost:4000/asst-hr',
-    empVerify:'http://localhost:4000/asst-hr/verify/employee',
-    getEmp:'http://localhost:4000/asst-hr/get/employees'
+    login:`${process.env.REACT_APP_BASE_URL}/asst-hr/login`,
+    createManager:`${process.env.REACT_APP_BASE_URL}/asst-hr`,
+    getManager:`${process.env.REACT_APP_BASE_URL}/asst-hr`,
+    delManager:`${process.env.REACT_APP_BASE_URL}/asst-hr`,
+    empVerify:`${process.env.REACT_APP_BASE_URL}/verify/employee`,
+    getEmp:`${process.env.REACT_APP_BASE_URL}/asst-hr/get/employees`
 };
 
 const HR={
-    login:'http://localhost:4000/hr/login',
-    update:'http://localhost:4000/hr/1',
-    createAsst:'http://localhost:4000/hr/asstHr',
-    getAsst:'http://localhost:4000/hr/find',
-    delAsst:'http://localhost:4000/hr',
-    empSubmit:'http://localhost:4000/hr/submit/employee',
-    getEmp:'http://localhost:4000/hr/get/employees'
+    login:`${process.env.REACT_APP_BASE_URL}/login`,
+    update:`${process.env.REACT_APP_BASE_URL}/hr/1`,
+    createAsst:`${process.env.REACT_APP_BASE_URL}/hr/asstHr`,
+    getAsst:`${process.env.REACT_APP_BASE_URL}/hr/find`,
+    delAsst:`${process.env.REACT_APP_BASE_URL}/hr`,
+    empSubmit:`${process.env.REACT_APP_BASE_URL}/employee`,
+    getEmp:`${process.env.REACT_APP_BASE_URL}/hr/get/employees`
 };
 
 const CEO={
-    login:'http://localhost:4000/ceo/login',
-    update:'http://localhost:4000/ceo/1',
-    createHr:'http://localhost:4000/ceo/hr',
-    getHrs:'http://localhost:4000/ceo/hrs',
-    delHr:'http://localhost:4000/ceo/hr',
+    login:`${process.env.REACT_APP_BASE_URL}/ceo/login`,
+    update:`${process.env.REACT_APP_BASE_URL}/ceo/1`,
+    createHr:`${process.env.REACT_APP_BASE_URL}/ceo/hr`,
+    getHrs:`${process.env.REACT_APP_BASE_URL}/ceo/hrs`,
+    delHr:`${process.env.REACT_APP_BASE_URL}/ceo/hr`,
 
 };
 
 const Manager={
-    login:'http://localhost:4000/manager/login',
-    getEmps:'http://localhost:4000/manager/emp',
-    editEmp:'http://localhost:4000/manager/emp',
-    delEmp:'http://localhost:4000/manager/emp'
+    login:`${process.env.REACT_APP_BASE_URL}/manager/login`,
+    getEmps:`${process.env.REACT_APP_BASE_URL}/manager/emp`,
+    editEmp:`${process.env.REACT_APP_BASE_URL}/manager/emp`,
+    delEmp:`${process.env.REACT_APP_BASE_URL}/manager/emp`
 }
 
 
 const EmpRegister={
-    create:'http://localhost:4000/employees',
-    getEmp:'http://localhost:4000/employees',
+    create:`${process.env.REACT_APP_BASE_URL}/employees`,
+    getEmp:`${process.env.REACT_APP_BASE_URL}/employees`,
 }
 
 
 
 const urls ={
-    base:'http://localhost:4000/',
+    base:'https://employee-ouay.onrender.com/',
     ceo:CEO,
     hr:HR,
     asstHr:AsstHR,
